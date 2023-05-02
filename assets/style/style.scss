@@ -24,9 +24,9 @@ main {
 }
 
 .feedback {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 51.6% 1fr;
   background-color: #292929;
   padding: 25px 9.375%;
 }
@@ -34,12 +34,13 @@ main {
 .feedback__join {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .feedback__title {
   @include footerfont1-1;
   line-height: 1;
-  margin: 0 20px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -74,12 +75,12 @@ main {
 .feedback-contact {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .contact-phone {
   display: flex;
   flex-direction: column;
-  margin-right: 41px;
 }
 
 .feedback__btns {
@@ -448,9 +449,16 @@ main {
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1439px) {
   .feedback {
     padding: 25px 2.735% 22px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .feedback {
+    grid-template-columns: 47.52% 1fr;
+    gap: 19px;
   }
 
   .feedback__join {
@@ -459,10 +467,10 @@ main {
 
   .feedback-contact {
     flex-direction: column;
+    align-items: flex-end;
   }
 
   .feedback__title {
-    margin-right: 0;
     margin-bottom: 14px;
   }
 
@@ -481,7 +489,6 @@ main {
     flex-direction: row;
     justify-content: space-around;
     min-width: 361px;
-    margin-right: 0;
     margin-bottom: 11px;
   }
 
@@ -536,16 +543,15 @@ main {
 @media screen and (max-width: 767px) {
   .feedback {
     padding: 20px 4.69% 17px;
-  }
-
-  .feedback__join {
-    margin-right: 10px;
+    grid-template-columns: 48.28% 1fr;
+    gap: 10px;
   }
 
   .feedback__title {
     font-size: 16px;
     line-height: 1.12;
     margin-bottom: 9px;
+    text-align: center;
   }
 
   .feedback__form {

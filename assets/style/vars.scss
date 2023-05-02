@@ -193,3 +193,19 @@ $nav-color: #ffc480;
   font-size: 15px;
   color: #ffffff;
 }
+
+@mixin formfont1-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F07FAE;
+}
+
+@mixin formfont1-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #707070;
+}

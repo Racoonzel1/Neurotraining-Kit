@@ -18,7 +18,338 @@
     <div class="container">
       <header class="header"></header>
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="order">
+          <div class="order__nav">
+            <h1 class="order__title">Оформление заказа</h1>
+            <ul class="order__nav-list">
+              <li class="order__nav-item">
+                <button class="order__nav-btn">Главная страница</button>
+              </li>
+              <li class="order__nav-item">
+                <button class="order__nav-btn">Корзина</button>
+              </li>
+              <li class="order__nav-item">
+                <button class="order__nav-btn order__nav-btn_type_active">
+                  Оформление заказа
+                </button>
+              </li>
+            </ul>
+          </div>
+          <ol class="order-list">
+            <li class="order-item">
+              Товары в заказе
+              <div class="order-wrapper order-wrapper_padding_reset">
+                <ul>
+                  <li class="order-wrapper__item">
+                    <img
+                      src="./assets/img/img_order/desk-img.png"
+                      alt="Доска Бильгоу"
+                    />
+                    <h3 class="order-wrapper__title">
+                      Доска Бильгоу для мозжечковой стимуляции
+                    </h3>
+                    <p class="order-wrapper__count">1 шт</p>
+                    <p class="order-wrapper__price">2 490 p.</p>
+                  </li>
+                  <li class="order-wrapper__item">
+                    <img
+                      src="./assets/img/img_order/ball-img.png"
+                      alt="Доска Бильгоу"
+                    />
+                    <h3 class="order-wrapper__title">
+                      Доска Бильгоу для мозжечковой стимуляции
+                    </h3>
+                    <p class="order-wrapper__count">1 шт</p>
+                    <p class="order-wrapper__price">2 490 p.</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="order-item">
+              Тип плательщика
+              <div class="order-wrapper">
+                <div class="order-wrapper__choice">
+                  <h3
+                    class="order-wrapper__title order-wrapper__title_size_20px"
+                  >
+                    Тип плательщика
+                  </h3>
+                  <div>
+                    <input
+                      class="order-wrapper__radio"
+                      type="radio"
+                      name="status"
+                      id="natural"
+                      checked
+                    />
+                    <label class="order-wrapper__label" for="natural"
+                      >Физическое лицо</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="order-wrapper__radio"
+                      type="radio"
+                      name="status"
+                      id="legal"
+                    />
+                    <label class="order-wrapper__label" for="legal"
+                      >Юридическое лицо</label
+                    >
+                  </div>
+                </div>
+                <div class="order-wrapper__enter">
+                  <h3
+                    class="order-wrapper__title order-wrapper__title_size_20px"
+                  >
+                    Город/населенный пункт
+                  </h3>
+                  <form class="order-wrapper__form">
+                    <input
+                      class="order-wrapper__input"
+                      type="text"
+                      placeholder="Введите название"
+                    />
+                    <button class="order-wrapper__btn" type="button"></button>
+                  </form>
+                  <p class="order-wrapper__text">
+                    Выберите свой город в списке. Если вы не нашли свой город,
+                    выберите <br />
+                    "другое местоположение", а город впишите в поле "Город"
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="order-item">
+              Доставка
+              <div class="order-wrapper">
+                <ul class="radio-cards">
+                  <li class="radio-cards__item radio-cards__item_type_checked">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                        checked
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/cdek-img.svg"
+                          alt="СДЕК"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Служба доставки СДЭК (Доставка до пункта выдачи)
+                    </p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/cdek-img.svg"
+                          alt="СДЕК"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Служба доставки СДЭК (Доставка до пункта выдачи)
+                    </p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/post-img.svg"
+                          alt="Почта"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Доставка почтой России (Посылка нестандартная)
+                    </p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/dpd-img.svg"
+                          alt="DPD"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Служба доставки DPD (Доставка до пункта выдачи)
+                    </p>
+                  </li>
+                </ul>
+                <div class="radio-cards__info">
+                  <img src="./assets/img/img_order/cdek-img.svg" alt="СДЕК" />
+                  <h4 class="radio-cards__info-title">
+                    Служба доставки СДЭК (Доставка до пункта выдачи)
+                  </h4>
+                  <p class="radio-cards__info-text">
+                    Доставка до пункта выдачи СДЭК в вашем городе
+                  </p>
+                  <p class="radio-cards__info-text">Наименование тарифа:</p>
+                  <p
+                    class="radio-cards__info-text radio-cards__info-text_type-bold"
+                  >
+                    Посылка склад-склад
+                  </p>
+                  <p class="radio-cards__info-text">
+                    Стоимость:
+                    <span
+                      class="radio-cards__info-text radio-cards__info-text_type-bold"
+                    >
+                      775 руб.
+                    </span>
+                  </p>
+                  <p class="radio-cards__info-text">
+                    Срок доставки
+                    <span
+                      class="radio-cards__info-text radio-cards__info-text_type-bold"
+                    >
+                      4-6 дн.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="order-item">
+              Оплата
+              <div class="order-wrapper order-wrapper_direction_column">
+                <ul class="radio-cards">
+                  <li class="radio-cards__item radio-cards__item_type_checked">
+                    <div>
+                      <input
+                        type="radio"
+                        name="card"
+                        id="card"
+                        class="radio-cards__input"
+                        checked
+                      />
+                      <label for="card"
+                        ><img
+                          src="./assets/img/img_order/money-img.svg"
+                          alt="card"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">Оплата при получении</p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="card"
+                        id="card"
+                        class="radio-cards__input"
+                      />
+                      <label for="card"
+                        ><img
+                          src="./assets/img/img_order/pay-img.svg"
+                          alt="card"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">Онлайн-оплата</p>
+                  </li>
+                </ul>
+                <p class="radio-cards__info-text">
+                  Вы оплачиваете товар непосредственно при получении посылки.
+                  После <br />оплаты сумма за заказ перечисляется магазину
+                  денежным переводом
+                </p>
+              </div>
+            </li>
+            <li class="order-item">
+              Покупатель
+              <div class="order-wrapper">
+                <form class="order-wrapper__form">
+                  <div>
+                    <label for="name" class="order-wrapper__form-label"
+                      >Ваше ФИО <span class="required">*</span></label
+                    >
+                    <label for="mail" class="order-wrapper__form-label"
+                      >E-Mail</label
+                    >
+                    <label for="phone" class="order-wrapper__form-label"
+                      >Телефон <span class="required">*</span></label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Иванов Иван Иванович"
+                      class="order-form__input"
+                      required
+                    />
+
+                    <input
+                      type="text"
+                      name="mail"
+                      id="mail"
+                      placeholder="login@domain.ru"
+                      class="order-form__input"
+                    />
+
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="+7 (495) 123-45-67"
+                      class="order-form__input"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+            </li>
+            <ul class="order__table">
+              <li class="order__table-cell">
+                <p class="order__table-text">Товаров на:</p>
+                <p class="order__table-price">15 400 р.</p>
+              </li>
+              <li class="order__table-cell">
+                <p class="order__table-text">Общий вес:</p>
+                <p class="order-wrapper__price order-wrapper__price_size_18px">
+                  12.4 кг
+                </p>
+              </li>
+              <li class="order__table-cell">
+                <p class="order__table-text">Доставка:</p>
+                <p class="order-wrapper__price order-wrapper__price_size_18px">
+                  1 668.72 р.
+                </p>
+              </li>
+              <li class="order__table-cell">
+                <p class="order__table-text">Итого:</p>
+                <p class="order-wrapper__price order-wrapper__price_size_18px">
+                  17 068 р.
+                </p>
+              </li>
+            </ul>
+          </ol>
+          <button class="order_btn" type="button">Оформить заказ</button>
+        </section>
+      </main>
 
       <footer class="footer">
         <div class="feedback">

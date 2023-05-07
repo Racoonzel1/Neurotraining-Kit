@@ -62,11 +62,14 @@
             </ul>
           </nav>
           <div class="header-info">
-            <img
-              class="logo"
-              src="./assets/img/img_common/logo_header.png"
-              alt="logo"
-            />
+            <div class="header-info__logo">
+              <img
+                class="logo"
+                src="./assets/img/img_common/logo_header.png"
+                alt="logo"
+              />
+              <img src="./assets/img/icons/burgermenu.svg" alt="" />
+            </div>
             <form class="search-form" action="#">
               <input
                 class="search-form__input"
@@ -95,15 +98,22 @@
                 >
               </div>
               <p class="header-info__schedule">
-                Время работы: 07:00 - 19:00 по МСК
+                <span class="mobile-hide">Время работы:</span>
+                07:00 - 19:00 по МСК
               </p>
             </div>
             <ul class="header-info__user-navigation">
+              <li class="mobile-show">
+                <img src="./assets/img/icons/search.svg" alt="icon" />
+              </li>
               <li><img src="./assets/img/icons/usericin.svg" alt="icon" /></li>
               <li><img src="./assets/img/icons/cart.svg" alt="cart" /></li>
             </ul>
           </div>
           <div class="header-product">
+            <button class="header-product__mobile-show mobile-show">
+              Каталог продукции
+            </button>
             <ul class="header-product__list">
               <li class="header-product__item">
                 <a class="header-product__item-link" href="#">

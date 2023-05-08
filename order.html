@@ -287,71 +287,61 @@
               Покупатель
               <div class="order-wrapper">
                 <form class="order-form">
-                  <div>
-                    <label for="name" class="order-form__label"
-                      >Ваше ФИО <span class="required">*</span></label
-                    >
-                    <label for="mail" class="order-form__label">E-Mail</label>
-                    <label for="phone" class="order-form__label"
-                      >Телефон <span class="required">*</span></label
-                    >
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Иванов Иван Иванович"
-                      class="order-form__input"
-                      required
-                    />
-
-                    <input
-                      type="text"
-                      name="mail"
-                      id="mail"
-                      placeholder="login@domain.ru"
-                      class="order-form__input"
-                    />
-
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      placeholder="+7 (495) 123-45-67"
-                      class="order-form__input"
-                      required
-                    />
-                  </div>
+                  <label for="name" class="order-form__label"
+                    >Ваше ФИО <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Иванов Иван Иванович"
+                    class="order-form__input"
+                    required
+                  />
+                  <label for="mail" class="order-form__label">E-Mail</label>
+                  <input
+                    type="text"
+                    name="mail"
+                    id="mail"
+                    placeholder="login@domain.ru"
+                    class="order-form__input"
+                  />
+                  <label for="phone" class="order-form__label"
+                    >Телефон <span class="required">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="+7 (495) 123-45-67"
+                    class="order-form__input"
+                    required
+                  />
                 </form>
               </div>
             </li>
-            <ul class="order__table">
-              <li class="order__table-cell">
-                <p class="order__table-text">Товаров на:</p>
-                <p class="order__table-price">15 400 р.</p>
-              </li>
-              <li class="order__table-cell">
-                <p class="order__table-text">Общий вес:</p>
-                <p class="order-wrapper__price order-wrapper__price_size_18px">
-                  12.4 кг
-                </p>
-              </li>
-              <li class="order__table-cell">
-                <p class="order__table-text">Доставка:</p>
-                <p class="order-wrapper__price order-wrapper__price_size_18px">
-                  1 668.72 р.
-                </p>
-              </li>
-              <li class="order__table-cell">
-                <p class="order__table-text">Итого:</p>
-                <p class="order-wrapper__price order-wrapper__price_size_18px">
-                  17 068 р.
-                </p>
-              </li>
-            </ul>
           </ol>
-          <button class="order_btn" type="button">Оформить заказ</button>
+          <ul class="order__table">
+            <li class="order__table-cell">
+              <p class="order__table-text">Товаров на:</p>
+              <p class="order__table-price">15 400 р.</p>
+            </li>
+            <li class="order__table-cell">
+              <p class="order__table-text">Общий вес:</p>
+              <p class="order__table-price">12.4 кг</p>
+            </li>
+            <li class="order__table-cell">
+              <p class="order__table-text">Доставка:</p>
+              <p class="order__table-price">1 668.72 р.</p>
+            </li>
+            <li class="order__table-cell">
+              <p class="order__table-text">Итого:</p>
+              <p class="order__table-price order__table-price_size_20px">
+                17 068 р.
+              </p>
+            </li>
+          </ul>
+          <button class="order__btn" type="button">Оформить заказ</button>
         </section>
       </main>
 

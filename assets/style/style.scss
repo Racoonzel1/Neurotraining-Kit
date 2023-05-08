@@ -19,6 +19,7 @@ main {
 }
 
 .order {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 55px auto 80px;
@@ -62,7 +63,6 @@ main {
 .order-list {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .order-item {
@@ -128,38 +128,40 @@ main {
   line-height: 0.9;
 }
 
-.order__table-price {
-  @include headerfont1-5;
-  line-height: 1;
-}
-
 .order__table {
-  padding: 9px 0 5px;
+  position: absolute;
+  margin-top: 30px;
   border: 1px #EEEEEE solid;
   min-width: 270px;
-  max-height: 262px;
-  position: absolute;
-  top: 108px;
+  top: 160px;
   right: 0;
+  border-radius: 10px;
 }
 
 .order__table-cell {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   padding: 21px 30px;
   border-bottom: 1px #EEEEEE solid;
+  @include textfont1-1;
+  line-height: 1;
+}
+
+.order__table-cell:first-child {
+  padding-top: 30px;
 }
 
 .order__table-cell:last-child {
-  background-color: #F7F7F7;;
-  padding: 26px 30px;
+  background-color: #F7F7F7;
   border-bottom: none;
+  padding-bottom: 26px;
+  padding-top: 26px;
 }
 
-.order__table-text {
-  @include textfont1-1;
-  line-height: 1;
+.order__table-price {
+  font-weight: 700;
 }
 
 .order-wrapper__choice {
@@ -303,19 +305,9 @@ main {
   @include headerfont1-6;
   line-height: 35px;
   display: grid;
+  align-items: center;
   grid-template-columns: 120px 1fr;
   width: 100%;
-}
-
-.order-form div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-right: 8px;
-}
-
-.order-form__label {
-  margin-bottom: 25px;
 }
 
 .order-form__radio {
@@ -332,7 +324,7 @@ main {
   margin-bottom: 10px
 }
 
-.order_btn {
+.order__btn {
   @include headerfont2-5;
   width: 177px;
   margin-top: 20px;
@@ -345,7 +337,7 @@ main {
   transition: 0.6s;
 }
 
-.feedback__form-btn:hover {
+.order__btn:hover {
   opacity: 0.6;
 }
 
@@ -779,7 +771,6 @@ main {
   opacity: 0.6;
 }
 
-
 @media screen and (max-width: 1439px) {
   .feedback {
     padding: 25px 2.735% 22px;
@@ -795,7 +786,7 @@ main {
 }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
   .main {
     max-width: 725px;
   }
@@ -835,7 +826,15 @@ main {
   }
 
   .order__table {
-    display: none;
+    position: static;
+  }
+
+  .order__table-cell {
+    padding-left: 20px;
+  }
+
+  .order__table-price_size_20px {
+    font-size: 20px;
   }
 
   .order-wrapper__item {
@@ -1088,6 +1087,24 @@ main {
     margin-top: 8px;
   }
 
+  .order-form {
+    grid-template-columns: 1fr;
+  }
+
+  .order-form__label{
+    font-size: 15px;
+    line-height: 1.07;
+    margin-bottom: 6px;
+  }
+  
+  .order-form__input {
+    padding: 12px 0 10px 19px;
+  }
+
+  .order__btn {
+    display: none;
+  }
+
   .radio-cards {
     grid-template-columns: 260px;
     padding-right: 0;
@@ -1100,6 +1117,31 @@ main {
 
   .radio-cards__info {
     margin-top: 10px;
+    max-width: 238px;
+  }
+
+  .order__table {
+    margin-top: 20px;
+  }
+
+  .order__table-cell {
+    padding: 12px 53px 5px 16px;
+    border-bottom: none;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .order__table-cell:first-child {
+    padding-top: 12px; 
+  }
+
+  .order__table-cell:last-child {
+    padding-bottom: 0;
+    padding-top: 0; 
+  }
+
+  .order__table-price_size_20px {
+    font-size: inherit;
   }
 
   .feedback {

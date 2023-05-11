@@ -1,9 +1,5 @@
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../font/Blogger_Sans.otf");
-}
-
-@import "./vars.scss";
+@import "../_fonts";
+@import "../_vars";
 
 * {
   margin: 0;
@@ -30,7 +26,7 @@
         height: 100%;
 
         .slides__board {
-          background-image: url(../img/main/bgr_blue.png);
+          background-image: url(/assets/img/main/bgr_blue.png);
           max-width: 770px;
           width: 100%;
           display: flex;
@@ -129,6 +125,7 @@
             gap: 9px;
             .slides__box-title {
               @include headerfont2-3;
+              gap: 0;
             }
             .slides__box-info {
               @include textfont2-2;

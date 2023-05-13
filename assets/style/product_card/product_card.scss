@@ -90,6 +90,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   &__contacts {
     display: flex;
     flex-wrap: wrap;
@@ -203,12 +204,26 @@ ul {
 .product-detail {
   display: flex;
   margin-bottom: 65px;
+  gap: 30px;
   &__preview-pics {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: vw(18);
   }
+  &__tabs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    &-item--activ {
+      font-weight: 700;
+      border-bottom: 3px solid #f07fae;
+    }
+  }
+
   &__pictures {
     display: flex;
     gap: vw(18);
@@ -241,6 +256,9 @@ ul {
   }
   &__content {
     flex-basis: vw(470);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -278,7 +296,7 @@ ul {
 
     .cards__btn {
       @include headerfont1-6;
-      padding: 11px 77px;
+      padding: 11px 0px;
       background-color: inherit;
       border: 1px solid #dfdfdf;
       border-radius: 10px;
@@ -366,12 +384,40 @@ ul {
     margin-bottom: 30px;
   }
 }
+.mobile-show {
+  display: none;
+}
+/*планшет*/
+@media all and (max-width: 1024px) {
+  .cards__item-4 {
+    display: none !important;
+  }
+  .search-form {
+    display: none;
+  }
+  .header-product__list {
+    gap: 22px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-product__item-link {
+    font-size: 16px;
+  }
+}
+/*mobile*/
 @media all and (max-width: 767px) {
   .cards {
     flex-wrap: wrap;
   }
+  .header {
+    padding-top: 0px;
+  }
   .product-detail {
     flex-direction: column;
+  }
+  .cards__item-4 {
+    display: flex !important;
   }
   .navigation {
     display: none;
@@ -431,8 +477,10 @@ ul {
   }
   .cards__item {
     width: 48%;
+
+    padding-top: 0px !important;
     padding-left: 10px !important;
-    padding-right: 10px;
+    padding-right: 10px !important;
     font-size: 18px;
   }
   .buy__form-input {
@@ -454,12 +502,20 @@ ul {
     font-size: 18px !important;
   }
   .cards__img {
-    flex-basis: 150px;
+    height: 100px;
   }
   .buy__form {
     width: 100%;
   }
   .buy__form-btn {
     width: 100%;
+  }
+  .mobile-show {
+    display: inline-block;
+  }
+  .cards__title {
+    margin-top: 10px;
+    min-height: 83px;
+    margin-bottom: 15px;
   }
 }

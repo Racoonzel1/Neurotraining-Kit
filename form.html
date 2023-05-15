@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,227 @@
     <div class="container">
       <header class="header"></header>
 
-      <main class="main"></main>
+      <main class="main">
+        <!-- В обычном состоянии popup скрыт, в дальнейшем при нажатии на соот/щие кнопки должен открываться путём модификатора popup_opened
+        для просмотра определённой формы нужно <div class="popup popup_closed"> заменить на  <div class="popup popup_opened"> -->
+        <!-- Форма авторизации -->
+        <div class="popup popup_opened">
+          <div class="popup__container">
+            <button class="popup__close" type="button"></button>
+            <p class="popup__title">Авторизация</p>
+            <form class="popup__form">
+              <input
+                class="popup__input"
+                type="text"
+                placeholder="Ваш логин"
+                name="login"
+                required
+              />
+              <div class="popup__control">
+                <input
+                  class="popup__input"
+                  type="password"
+                  placeholder="Ваш пароль"
+                  name="password"
+                  required
+                />
+                <a href="#" class="popup__input-control"></a>
+              </div>
+              <div class="popup__submit popup__submit_align_start">
+                <button type="submit" class="popup__submit-button">
+                  Войти на сайт
+                </button>
+                <a href="#" class="popup__submit-text">Забыли пароль?</a>
+              </div>
+            </form>
+            <div class="popup__register">
+              <p class="popup__register-text">Нет аккаунта?</p>
+              <a href="#" class="popup__link"> Зарегистрируйтесь</a>
+            </div>
+            <div class="login">
+              <p class="login__title">Войти через:</p>
+              <ul class="login__list">
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img
+                      src="./assets/img/img_form/facebook.svg"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/vk.svg" alt="vk"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/ok.svg" alt="ok"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/google.svg" alt="google"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Форма регистрации -->
+        <div class="popup popup_closed">
+          <div class="popup__container">
+            <button class="popup__close" type="button"></button>
+            <p class="popup__title">Регистрация</p>
+            <form class="popup__form">
+              <input
+                class="popup__input"
+                type="text"
+                placeholder="Ваш логин"
+                name="login"
+                required
+              />
+              <div class="popup__control">
+                <input
+                  class="popup__input"
+                  type="password"
+                  placeholder="Ваш пароль"
+                  name="password"
+                  required
+                />
+                <a href="#" class="popup__input-control"></a>
+              </div>
+              <div class="popup__control">
+                <input
+                  class="popup__input"
+                  type="password"
+                  placeholder="Повторите пароль"
+                  name="password"
+                  required
+                />
+                <a href="#" class="popup__input-control"></a>
+              </div>
+              <div class="popup__submit">
+                <button type="submit" class="popup__submit-button">
+                  Регистрация
+                </button>
+              </div>
+            </form>
+            <div class="login">
+              <p class="login__title">Войти через:</p>
+              <ul class="login__list">
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img
+                      src="./assets/img/img_form/facebook.svg"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/vk.svg" alt="vk"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/ok.svg" alt="ok"
+                  /></a>
+                </li>
+                <li class="login__list-item">
+                  <a href="#" class="login__link"
+                    ><img src="./assets/img/img_form/google.svg" alt="google"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Форма "Заказать звонок" -->
+        <div class="popup popup_closed">
+          <div class="popup__container">
+            <button class="popup__close" type="button"></button>
+            <p class="popup__title">Заказать звонок</p>
+            <form class="popup__form">
+              <input
+                class="popup__input"
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+              />
+              <input
+                class="popup__input"
+                type="tel"
+                placeholder="Номер телефона"
+                name="phone"
+                required
+              />
+              <div class="popup__submit">
+                <button type="submit" class="popup__submit-button">
+                  Заказать звонок
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Форма "Задать вопрос" -->
+        <div class="popup popup_closed">
+          <div class="popup__container">
+            <button class="popup__close" type="button"></button>
+            <p class="popup__title">Задать вопрос</p>
+            <form class="popup__form">
+              <input
+                class="popup__input"
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+              />
+              <input
+                class="popup__input"
+                type="email"
+                placeholder="Ваш email"
+                name="email"
+                required
+              />
+              <textarea
+                class="popup__input"
+                name="question"
+                cols="30"
+                rows="10"
+                placeholder="Задайте ваш вопрос?"
+              ></textarea>
+              <div class="popup__submit">
+                <button type="submit" class="popup__submit-button">
+                  Заказать звонок
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--"Вы успешно подписались на рассылку" -->
+        <div class="popup popup_closed">
+          <div class="popup__container popup__container_without_form">
+            <button class="popup__close" type="button"></button>
+            <img src="./assets/img/img_form/email-icon.svg" alt="email" />
+            <p class="popup__title popup__title_size_big">
+              Вы успешно <br />подписались на рассылку
+            </p>
+            <p class="popup__subtitle">
+              Проверьте вашу почту, и перейдите по ссылки для подтверждения
+            </p>
+          </div>
+        </div>
+      </main>
 
       <footer class="footer"></footer>
     </div>

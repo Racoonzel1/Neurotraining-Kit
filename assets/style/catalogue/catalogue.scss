@@ -9,17 +9,38 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 1440px;
   width: 100%;
+  margin: auto;
 }
 
 .main {
   max-width: 1170px;
   width: 100%;
 
-  &__header {
+  &__header-text {
     @include headerfont1-1;
+  }
+
+  &__route-list {
+    display: flex;
+  }
+
+  &__route-btn {
+    margin-right: 10px;
+  }
+
+  &__route-item {
+    padding: 4px 15px;
+    background: #ffc480;
+    border-radius: 5px;
+  }
+
+  &__route-link {
+    @include orderfont1-1;
+    text-decoration: none;
   }
 }
 
@@ -78,6 +99,10 @@
 
   .category-name {
     padding-bottom: 18px;
+
+    .category-filter {
+      padding-bottom: 30px;
+    }
   }
 }
 

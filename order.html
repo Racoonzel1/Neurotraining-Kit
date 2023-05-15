@@ -18,9 +18,509 @@
     <div class="container">
       <header class="header"></header>
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="order">
+          <div class="order__nav">
+            <h1 class="order__title">Оформление заказа</h1>
+            <ul class="order__nav-list">
+              <li class="order__nav-item">
+                <button class="order__nav-btn">Главная страница</button>
+              </li>
+              <li class="order__nav-item">
+                <button class="order__nav-btn">Корзина</button>
+              </li>
+              <li class="order__nav-item">
+                <button class="order__nav-btn order__nav-btn-type-active">
+                  Оформление заказа
+                </button>
+              </li>
+            </ul>
+          </div>
+          <ol class="order-list">
+            <li class="order-item">
+              Товары в заказе
+              <div class="order-wrapper order-wrapper-padding-reset">
+                <ul>
+                  <li class="order-wrapper__item">
+                    <img
+                      src="./assets/img/img_order/desk-img.png"
+                      alt="Доска Бильгоу"
+                      class="order-wrapper__img"
+                    />
+                    <h3 class="order-wrapper__title">
+                      Доска Бильгоу для мозжечковой стимуляции
+                    </h3>
+                    <div>
+                      <p class="order-wrapper__count">1 шт</p>
+                      <p class="order-wrapper__price">2 490 p.</p>
+                    </div>
+                  </li>
+                  <li class="order-wrapper__item">
+                    <img
+                      src="./assets/img/img_order/ball-img.png"
+                      alt="Доска Бильгоу"
+                      class="order-wrapper__img"
+                    />
+                    <h3 class="order-wrapper__title">
+                      Доска Бильгоу для мозжечковой стимуляции
+                    </h3>
+                    <div>
+                      <p class="order-wrapper__count">1 шт</p>
+                      <p class="order-wrapper__price">2 490 p.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="order-item">
+              Тип плательщика
+              <div class="order-wrapper">
+                <div class="order-wrapper__choice">
+                  <h3
+                    class="order-wrapper__title order-wrapper__title-size-20px"
+                  >
+                    Тип плательщика
+                  </h3>
+                  <div>
+                    <input
+                      class="order-wrapper__radio"
+                      type="radio"
+                      name="status"
+                      id="natural"
+                      checked
+                    />
+                    <label class="order-wrapper__label" for="natural"
+                      >Физическое лицо</label
+                    >
+                  </div>
+                  <div>
+                    <input
+                      class="order-wrapper__radio"
+                      type="radio"
+                      name="status"
+                      id="legal"
+                    />
+                    <label class="order-wrapper__label" for="legal"
+                      >Юридическое лицо</label
+                    >
+                  </div>
+                </div>
+                <div class="order-wrapper__enter">
+                  <h3
+                    class="order-wrapper__title order-wrapper__title-size-20px"
+                  >
+                    Город/населенный пункт
+                  </h3>
+                  <form class="order-wrapper__form">
+                    <input
+                      class="order-wrapper__input"
+                      type="text"
+                      placeholder="Введите название"
+                    />
+                    <button class="order-wrapper__btn" type="button"></button>
+                  </form>
+                  <p class="order-wrapper__text">
+                    Выберите свой город в списке. Если вы не нашли свой город,
+                    выберите "другое местоположение", а город впишите в поле
+                    "Город"
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="order-item">
+              Доставка
+              <div class="order-wrapper">
+                <ul class="radio-cards">
+                  <li class="radio-cards__item radio-cards__item-type-checked">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                        checked
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/cdek-img.svg"
+                          alt="СДЕК"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Служба доставки СДЭК (Доставка до пункта выдачи)
+                    </p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/cdek-img.svg"
+                          alt="СДЕК"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Служба доставки СДЭК (Доставка до пункта выдачи)
+                    </p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/post-img.svg"
+                          alt="Почта"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Доставка почтой России (Посылка нестандартная)
+                    </p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="transfer"
+                        id="СДЕК"
+                        class="radio-cards__input"
+                      />
+                      <label for="СДЕК"
+                        ><img
+                          src="./assets/img/img_order/dpd-img.svg"
+                          alt="DPD"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">
+                      Служба доставки DPD (Доставка до пункта выдачи)
+                    </p>
+                  </li>
+                </ul>
+                <div class="radio-cards__info">
+                  <img src="./assets/img/img_order/cdek-img.svg" alt="СДЕК" />
+                  <h4 class="radio-cards__info-title">
+                    Служба доставки СДЭК (Доставка до пункта выдачи)
+                  </h4>
+                  <p class="radio-cards__info-text">
+                    Доставка до пункта выдачи СДЭК в вашем городе
+                  </p>
+                  <p class="radio-cards__info-text">Наименование тарифа:</p>
+                  <p
+                    class="radio-cards__info-text radio-cards__info-text-type-bold"
+                  >
+                    Посылка склад-склад
+                  </p>
+                  <p class="radio-cards__info-text">
+                    Стоимость:
+                    <span
+                      class="radio-cards__info-text radio-cards__info-text-type-bold"
+                    >
+                      775 руб.
+                    </span>
+                  </p>
+                  <p class="radio-cards__info-text">
+                    Срок доставки
+                    <span
+                      class="radio-cards__info-text radio-cards__info-text-type-bold"
+                    >
+                      4-6 дн.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="order-item">
+              Оплата
+              <div class="order-wrapper order-wrapper-direction-column">
+                <ul class="radio-cards">
+                  <li class="radio-cards__item radio-cards__item-type-checked">
+                    <div>
+                      <input
+                        type="radio"
+                        name="card"
+                        id="card"
+                        class="radio-cards__input"
+                        checked
+                      />
+                      <label for="card"
+                        ><img
+                          src="./assets/img/img_order/money-img.svg"
+                          alt="card"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">Оплата при получении</p>
+                  </li>
+                  <li class="radio-cards__item">
+                    <div>
+                      <input
+                        type="radio"
+                        name="card"
+                        id="card"
+                        class="radio-cards__input"
+                      />
+                      <label for="card"
+                        ><img
+                          src="./assets/img/img_order/pay-img.svg"
+                          alt="card"
+                      /></label>
+                    </div>
+                    <p class="radio-cards__text">Онлайн-оплата</p>
+                  </li>
+                </ul>
+                <p class="radio-cards__info-text">
+                  Вы оплачиваете товар непосредственно при получении посылки.
+                  После <br />оплаты сумма за заказ перечисляется магазину
+                  денежным переводом
+                </p>
+              </div>
+            </li>
+            <li class="order-item">
+              Покупатель
+              <div class="order-wrapper">
+                <form class="order-form">
+                  <label for="name" class="order-form__label"
+                    >Ваше ФИО <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Иванов Иван Иванович"
+                    class="order-form__input"
+                    required
+                  />
+                  <label for="mail" class="order-form__label">E-Mail</label>
+                  <input
+                    type="text"
+                    name="mail"
+                    id="mail"
+                    placeholder="login@domain.ru"
+                    class="order-form__input"
+                  />
+                  <label for="phone" class="order-form__label"
+                    >Телефон <span class="required">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="+7 (495) 123-45-67"
+                    class="order-form__input"
+                    required
+                  />
+                </form>
+              </div>
+            </li>
+          </ol>
+          <ul class="order__table">
+            <li class="order__table-cell">
+              <p class="order__table-text">Товаров на:</p>
+              <p class="order__table-price">15 400 р.</p>
+            </li>
+            <li class="order__table-cell">
+              <p class="order__table-text">Общий вес:</p>
+              <p class="order__table-price">12.4 кг</p>
+            </li>
+            <li class="order__table-cell">
+              <p class="order__table-text">Доставка:</p>
+              <p class="order__table-price">1 668.72 р.</p>
+            </li>
+            <li class="order__table-cell">
+              <p class="order__table-text">Итого:</p>
+              <p class="order__table-price order__table-price-size-20px">
+                17 068 р.
+              </p>
+            </li>
+          </ul>
+          <button class="order__btn" type="button">Оформить заказ</button>
+        </section>
+      </main>
 
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="feedback">
+          <div class="feedback__join">
+            <h3 class="feedback__title">Новинки и акции у вас в почте</h3>
+            <div class="feedback__form">
+              <input
+                type="text"
+                class="feedback__form-input"
+                placeholder="Ваш e-mail адрес"
+              />
+              <button type="button" class="feedback__form-btn">
+                Подписаться
+              </button>
+            </div>
+          </div>
+          <div class="feedback-contact">
+            <div class="contact-phone">
+              <address class="phone">
+                <img
+                  src="./assets/img/img_footer/phone-img.svg"
+                  alt="Телефон"
+                  class="phone__img"
+                />
+                <p class="phone__number">8 (800) 55 48 97</p>
+              </address>
+              <p class="contact-phone__text">Звонок бесплатный</p>
+            </div>
+            <div class="feedback__btns">
+              <button type="button" class="feedback__btn">Задать вопрос</button>
+              <button type="button" class="feedback__btn">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__columns">
+          <img
+            src="./assets/img/img_footer/logo_footer.svg"
+            alt="Логотип"
+            class="footer__logo footer__logo-type-big"
+          />
+          <img
+            src="./assets/img/img_footer/logo-footer-small.svg"
+            alt="Логотип"
+            class="footer__logo footer__logo-type-small"
+          />
+          <div class="footer__info">
+            <div class="footer__nav">
+              <nav class="footer__column">
+                <h3 class="footer__column-heading">Информация</h3>
+                <ul class="footer__column-links">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Главная</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Кредит</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Возврат</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Покупателям</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Доставка и оплата</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__column">
+                <h3 class="footer__column-heading">Вебинар</h3>
+                <ul class="footer__column-links">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Психолог</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"> Логопед</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"> Дефектолог</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__column">
+                <h3 class="footer__column-heading">Новости</h3>
+                <ul class="footer__column-links">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Акции</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"> Блог</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__contact">
+              <h3 class="footer__column-heading">Контакты</h3>
+              <address class="contact">
+                <p class="contact__text">Время работы: 07:00 - 19:00 по МСК</p>
+                <p class="contact__text contact__text-color-pink">
+                  info@neyro-t.ru
+                </p>
+                <p class="contact__text">
+                  Свердловская обл., г.Новоуральск, <br />
+                  ул. Фрунзе оф.3
+                </p>
+              </address>
+              <ul class="social-icons">
+                <li class="social-icon">
+                  <a
+                    href="https://vk.com/"
+                    target="_blank"
+                    class="social-icon__link"
+                    ><img
+                      class="social-icon__img"
+                      src="./assets/img/img_footer/vk-icon.svg"
+                      alt="Вконтакте"
+                  /></a>
+                </li>
+                <li class="social-icon">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="social-icon__link"
+                    ><img
+                      class="social-icon__img"
+                      src="./assets/img/img_footer/instagram-icon.svg"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li class="social-icon">
+                  <a
+                    href="https://www.whatsapp.com/"
+                    target="_blank"
+                    class="social-icon__link"
+                    ><img
+                      class="social-icon__img"
+                      src="./assets/img/img_footer/whatsapp-icon.svg"
+                      alt="Whatsapp"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            Политика обработки персональных данных
+          </p>
+          <ul class="pay-card">
+            <li class="pay-card__item">
+              <img
+                src="./assets/img/img_footer/mir-card.svg"
+                alt="Мир"
+                class="pay-card__img"
+              />
+            </li>
+            <li class="pay-card__item">
+              <img
+                src="./assets/img/img_footer/master-card.svg"
+                alt="Master-Card"
+                class="pay-card__img"
+              />
+            </li>
+            <li class="pay-card__item">
+              <img
+                src="./assets/img/img_footer/visa-card.svg"
+                alt="Visa"
+                class="pay-card__img"
+              />
+            </li>
+          </ul>
+          <p class="footer__author">Copyright © 2021 ООО “Интернет проекты”</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

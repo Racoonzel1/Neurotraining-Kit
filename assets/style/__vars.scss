@@ -194,3 +194,43 @@ $nav-color: #ffc480;
   $result: $size * 100 / $width;
   @return $result * 1vw;
 }
+
+@mixin orderfont1-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+@mixin footerfont1-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@mixin footerfont1-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+@mixin formfont1-1 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #f07fae;
+}
+
+@mixin formfont1-2 {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #707070;
+}

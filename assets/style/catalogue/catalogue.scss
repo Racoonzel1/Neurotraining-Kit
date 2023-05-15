@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+@import "../_header";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -22,6 +24,10 @@
 
   &__header-text {
     @include headerfont1-1;
+  }
+
+  &__route {
+    margin-bottom: 56px;
   }
 
   &__route-list {
@@ -42,17 +48,19 @@
     @include orderfont1-1;
     text-decoration: none;
   }
-}
 
-.catalogue-content {
-  display: flex;
-  justify-content: space-between;
+  &__catalogue-content {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  &__categories {
+  &__catalogue-content-categories {
     width: 271px;
     max-width: 100%;
   }
+}
 
+.catalogue-content {
   &__products {
     max-width: 870px;
     width: 100%;

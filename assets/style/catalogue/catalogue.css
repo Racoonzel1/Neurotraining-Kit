@@ -22,6 +22,99 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Blogger Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/BloggerSans.woff2") format("woff2"), url("../font/BloggerSans.woff") format("woff"), url("../font/BloggerSans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Blogger Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/BloggerSans-Medium.woff2") format("woff2"), url("../font/BloggerSans-Medium.woff") format("woff"), url("../font/BloggerSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Blogger Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/BloggerSans-Bold.woff2") format("woff2"), url("../font/BloggerSans-Bold.woff") format("woff"), url("../font/BloggerSans-Bold.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.x-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+}
+.nav__link {
+  font-size: 14px;
+  line-height: 15px;
+  color: #707070;
+}
+
+.nav-social {
+  display: flex;
+  gap: 15px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-info__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 308px;
+}
+.header-info__user-navigation {
+  display: flex;
+}
+
+.search-form {
+  max-width: 370px;
+  width: 100%;
+  position: relative;
+}
+.search-form__input {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+.search-form__input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: #707070;
+}
+.search-form__input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: #707070;
+}
+.search-form__button {
+  position: absolute;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -42,6 +135,9 @@
   font-size: 50px;
   color: #333333;
 }
+.main__route {
+  margin-bottom: 56px;
+}
 .main__route-list {
   display: flex;
 }
@@ -61,15 +157,15 @@
   color: #ffffff;
   text-decoration: none;
 }
-
-.catalogue-content {
+.main__catalogue-content {
   display: flex;
   justify-content: space-between;
 }
-.catalogue-content__categories {
+.main__catalogue-content-categories {
   width: 271px;
   max-width: 100%;
 }
+
 .catalogue-content__products {
   max-width: 870px;
   width: 100%;

@@ -24,21 +24,42 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 1440px;
   width: 100%;
+  margin: auto;
 }
 
 .main {
   max-width: 1170px;
   width: 100%;
 }
-.main__header {
+.main__header-text {
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   color: #333333;
+}
+.main__route-list {
+  display: flex;
+}
+.main__route-btn {
+  margin-right: 10px;
+}
+.main__route-item {
+  padding: 4px 15px;
+  background: #ffc480;
+  border-radius: 5px;
+}
+.main__route-link {
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .catalogue-content {
@@ -95,6 +116,9 @@
 }
 .category .category-name {
   padding-bottom: 18px;
+}
+.category .category-name .category-filter {
+  padding-bottom: 30px;
 }
 
 .price-sorter {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="./assets/style/main_page/main_page.css" />
     <link
       rel="shortcut icon"
@@ -17,7 +18,7 @@
   <body>
     <div class="container">
       <header class="header"></header>
-
+      
       <div class="wrapper">
         <main class="main">
           <div class="main__slides">
@@ -41,40 +42,294 @@
               />
             </div>
             <div class="slides__box-wrapper">
-              <div class="slides__box-stand">
-                <div class="slides__box">
-                  <h2 class="slides__box-title">Стойка с мишенями-целями</h2>
-                  <p class="slides__box-info">
-                    Стойка регулируется по высоте (от 60 до 120 см) стойка, На
-                    стойке расположено 5 мишеней-целей.
-                  </p>
-                  <span class="slides__box-link">Подробнее</span>
+              
+              <div class="slides__box-wrapper">
+                <div class="slides__box-stand">
+                  <div class="slides__box">
+                    <h2 class="slides__box-title">
+                      <span class="slides__box-title1">Стойка</span>
+                      <span class="slides__box-title2">с мишенями-целями</span>
+                    </h2>
+                    <p class="slides__box-info">
+                      Стойка регулируется по высоте (от 60 до 120 см) стойка, На
+                      стойке расположено 5 мишеней-целей.
+                    </p>
+                    <button class="slides__board-btn" type="button">
+                      Узнать подробности
+                    </button>
+                  </div>
+                  <img
+                    class="slides__board-img"
+                    src="./assets/img/main/main_girl.png"
+                    alt="Доска Бильгоу"
+                  />
                 </div>
-                <img
-                  class="slides__box-img1"
-                  src="./assets/img/main/main_img-green.png"
-                  alt="Стойка с мишенями-целями"
-                />
+                <div class="slides__box-eight">
+                  <div class="slides__box">
+                    <h2 class="slides__box-title">Нейровосьмерка</h2>
+                    <p class="slides__box-info">
+                      один из тренажеров для мозжечковой стимуляции. Для успешного
+                      выполнения заданий необходимо регулировать...
+                    </p>
+                    <span class="slides__box-link">Подробнее</span>
+                  </div>
+                  <img
+                    class="slides__box-img2"
+                    src="./assets/img/main/main_img-pink.png"
+                    alt="Нейровосьмерка"
+                  />
+                </div>
               </div>
-              <div class="slides__box-eight">
-                <div class="slides__box">
-                  <h2 class="slides__box-title">Нейровосьмерка</h2>
-                  <p class="slides__box-info">
-                    один из тренажеров для мозжечковой стимуляции. Для успешного
-                    выполнения заданий необходимо регулировать...
+            </div>
+            <div class="main__cards">
+              <h2 class="main__cards-title">Товары месяца</h2>
+              <div class="main__cards-box">
+                <ul class="cards">
+                  <li class="cards__item">
+                    <img
+                      src="./assets/img/img_common/desk-img.png"
+                      alt="Доска Бильгоу"
+                      class="cards__img"
+                    />
+                    <h3 class="cards__title">
+                      Доска Бильгоу для мозжечковой стимуляции
+                    </h3>
+                    <p class="cards__description">
+                      Тренажеров для мозжечковой стимуляции.
+                    </p>
+                    <div class="buy">
+                      <div class="buy__price">
+                        <p class="buy__price buy__price-type-new">2 490 p.</p>
+                        <p class="buy__price buy__price-type-old">3 470 p.</p>
+                      </div>
+                      <div class="buy__form">
+                        <input
+                          class="buy__form-input"
+                          type="number"
+                          min="1"
+                          value="1"
+                        />
+                        <button class="buy__form-btn">Купить</button>
+                      </div>
+                    </div>
+                    <button class="cards__btn" type="button">Подробнее</button>
+                  </li>
+                  <li class="cards__item">
+                    <img
+                      src="./assets/img/img_common/balls-img.png"
+                      alt="Набор мячей"
+                      class="cards__img"
+                    />
+                    <h3 class="cards__title">
+                      Набор мячей с фиксацией на одежде
+                    </h3>
+                    <p class="cards__description">
+                      Тренажеров для мозжечковой стимуляции.
+                    </p>
+                    <div class="buy">
+                      <div class="buy__price">
+                        <p class="buy__price buy__price-type-new">650 р.</p>
+                        <p class="buy__price buy__price-type-old">935 p.</p>
+                      </div>
+                      <div class="buy__form">
+                        <input
+                          class="buy__form-input"
+                          type="number"
+                          min="1"
+                          value="1"
+                        />
+                        <button class="buy__form-btn">Купить</button>
+                      </div>
+                    </div>
+                    <button class="cards__btn" type="button">Подробнее</button>
+                  </li>
+                  <li class="cards__item">
+                    <img
+                      src="./assets/img/img_common/target-img.png"
+                      alt="Мишень напольная"
+                      class="cards__img"
+                    />
+                    <h3 class="cards__title">Мишень напольная цветная</h3>
+                    <p class="cards__description">
+                      Тренажеров для мозжечковой стимуляции.
+                    </p>
+                    <div class="buy">
+                      <div class="buy__price">
+                        <p class="buy__price buy__price-type-new">1 590 р.</p>
+                        <p class="buy__price buy__price-type-old">2 000 p.</p>
+                      </div>
+                      <div class="buy__form">
+                        <input
+                          class="buy__form-input"
+                          type="number"
+                          min="1"
+                          value="1"
+                        />
+                        <button class="buy__form-btn">Купить</button>
+                      </div>
+                    </div>
+                    <button class="cards__btn" type="button">Подробнее</button>
+                  </li>
+                  <li class="cards__item cards__item-4">
+                    <img
+                      src="./assets/img/img_common/bag-img.png"
+                      alt="Сумка для тренажеров Бильгоу"
+                      class="cards__img"
+                    />
+                    <h3 class="cards__title">Сумка для тренажеров Бильгоу</h3>
+                    <p class="cards__description">
+                      Тренажеров для мозжечковой стимуляции.
+                    </p>
+                    <div class="buy">
+                      <div class="buy__price">
+                        <p class="buy__price buy__price-type-new">2 490 р.</p>
+                        <p class="buy__price buy__price-type-old">3 000 p.</p>
+                      </div>
+                      <div class="buy__form">
+                        <input
+                          class="buy__form-input"
+                          type="number"
+                          min="1"
+                          value="1"
+                        />
+                        <button class="buy__form-btn">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="cards__btn" type="button">Подробнее</button>
+                </li>
+                <li class="cards__item cards__item-3">
+                  <img
+                    src="./assets/img/img_common/target-img.png"
+                    alt="Мишень напольная"
+                    class="cards__img"
+                  />
+                  <h3 class="cards__title">Мишень напольная цветная</h3>
+                  <p class="cards__description">
+                    Тренажеров для мозжечковой стимуляции.
                   </p>
-                  <span class="slides__box-link">Подробнее</span>
-                </div>
+                  <div class="buy">
+                    <div class="buy__price">
+                      <p class="buy__price buy__price-type-new">1 590 р.</p>
+                      <p class="buy__price buy__price-type-old">2 000 p.</p>
+                    </div>
+                    <div class="buy__form">
+                      <input
+                        class="buy__form-input"
+                        type="number"
+                        min="1"
+                        value="1"
+                      />
+                      <button class="buy__form-btn">Купить</button>
+                    </div>
+                  </div>
+                  <button class="cards__btn" type="button">Подробнее</button>
+                </li>
+                <li class="cards__item cards__item-4">
+                  <img
+                    src="./assets/img/img_common/bag-img.png"
+                    alt="Сумка для тренажеров Бильгоу"
+                    class="cards__img"
+                  />
+                  <h3 class="cards__title">Сумка для тренажеров Бильгоу</h3>
+                  <p class="cards__description">
+                    Тренажеров для мозжечковой стимуляции.
+                  </p>
+                  <div class="buy">
+                    <div class="buy__price">
+                      <p class="buy__price buy__price-type-new">2 490 р.</p>
+                      <p class="buy__price buy__price-type-old">3 000 p.</p>
+                    </div>
+                    <div class="buy__form">
+                      <input
+                        class="buy__form-input"
+                        type="number"
+                        min="1"
+                        value="1"
+                      />
+                      <button class="buy__form-btn">Купить</button>
+                    </div>
+                  </div>
+                  <button class="cards__btn" type="button">Подробнее</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__cards main__neuropsy">
+            <h2 class="main__cards-title">Для нейропсихологов</h2>
+            <div class="main__cards-box">
+              <div class="cards cards__box0">
                 <img
-                  class="slides__box-img2"
-                  src="./assets/img/main/main_img-pink.png"
-                  alt="Нейровосьмерка"
+                  class="cards__video cards__video-neuro"
+                  src="./assets/img/main/video1.png"
+                  alt="video"
                 />
+
+                <ul class="cards__box2">
+                  <li class="cards__item">
+                    <img
+                      src="./assets/img/img_common/desk-img.png"
+                      alt="Доска Бильгоу"
+                      class="cards__img"
+                    />
+                    <h3 class="cards__title">
+                      Доска Бильгоу для мозжечковой стимуляции
+                    </h3>
+                    <p class="cards__description">
+                      Тренажеров для мозжечковой стимуляции.
+                    </p>
+                    <div class="buy">
+                      <div class="buy__price">
+                        <p class="buy__price buy__price-type-new">2 490 p.</p>
+                        <p class="buy__price buy__price-type-old">3 470 p.</p>
+                      </div>
+                      <div class="buy__form">
+                        <input
+                          class="buy__form-input"
+                          type="number"
+                          min="1"
+                          value="1"
+                        />
+                        <button class="buy__form-btn">Купить</button>
+                      </div>
+                    </div>
+                    <button class="cards__btn" type="button">Подробнее</button>
+                  </li>
+                  <li class="cards__item cards__item-2">
+                    <img
+                      src="./assets/img/img_common/balls-img.png"
+                      alt="Набор мячей"
+                      class="cards__img"
+                    />
+                    <h3 class="cards__title">
+                      Набор мячей с фиксацией на одежде
+                    </h3>
+                    <p class="cards__description">
+                      Тренажеров для мозжечковой стимуляции.
+                    </p>
+                    <div class="buy">
+                      <div class="buy__price">
+                        <p class="buy__price buy__price-type-new">650 р.</p>
+                        <p class="buy__price buy__price-type-old">935 p.</p>
+                      </div>
+                      <div class="buy__form">
+                        <input
+                          class="buy__form-input"
+                          type="number"
+                          min="1"
+                          value="1"
+                        />
+                        <button class="buy__form-btn">Купить</button>
+                      </div>
+                    </div>
+                    <button class="cards__btn" type="button">Подробнее</button>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="main__cards">
-            <h2 class="main__cards-title">Товары месяца</h2>
+          <div class="main__cards main__trainers">
+            <h2 class="main__cards-title">Нейротренажеры</h2>
             <div class="main__cards-box">
               <ul class="cards">
                 <li class="cards__item">
@@ -135,7 +390,7 @@
                   </div>
                   <button class="cards__btn" type="button">Подробнее</button>
                 </li>
-                <li class="cards__item">
+                <li class="cards__item cards__item-3">
                   <img
                     src="./assets/img/img_common/target-img.png"
                     alt="Мишень напольная"
@@ -192,14 +447,270 @@
               </ul>
             </div>
           </div>
-          <div class="main__neuropsy"></div>
-          <div class="main__trainers"></div>
-          <div class="main__about-us"></div>
-          <div class="main__reviews"></div>
+          <div class="main__cards main__about-us">
+            <h2 class="main__cards-title">Коротко о нас</h2>
+            <div class="main__cards-box">
+              <img
+                class="cards__video"
+                src="./assets/img/main/video-about-us.png"
+                alt="video_about-us"
+              />
+              <div class="about-us__wrapper">
+                <div class="about-us__box">
+                  <h3 class="about-us__header">Что такое доска Бильгоу?</h3>
+                  <p class="about-us__info">
+                    История программы мозжечковой стимуляции родилась ее
+                    началась в 60е годы XX века. Как-то раз американский педагог
+                    Фрэнк Бильгоу, который работал в то время в школе, заметил
+                    интересную закономерность: ученики, которые на переменах
+                    играли в игры, связанные с балансировкой.
+                  </p>
+                </div>
+                <div class="about-us__certif">
+                  <h3 class="about-us__header">Лицензии и cертификаты</h3>
+                  <div class="about-us__images-box">
+                    <img
+                      src="./assets/img/main/main_cert-1.png"
+                      class="about-us__images"
+                      alt="certificate"
+                    />
+                    <img
+                      src="./assets/img/main/main_cert-2.png"
+                      class="about-us__images"
+                      alt="certificate"
+                    />
+                    <img
+                      src="./assets/img/main/main_cert-3.png"
+                      class="about-us__images"
+                      alt="certificate"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__cards main__reviews">
+            <h2 class="main__cards-title">Отзывы</h2>
+            <div class="main__reviews-info">
+              <div class="reviews__box reviews__box-andrei">
+                <img
+                  class="reviews__box-img"
+                  src="./assets/img/main/review_Andrei.png"
+                  alt="Andrei"
+                />
+                <div class="reviews__box-title">
+                  <span class="reviews__box-name"
+                    >Косов Андрей Владимирович</span
+                  >
+                  <span class="reviews__box-town">г. Пермь</span>
+                </div>
+                <p class="reviews__box-text">
+                  Двухсторонняя цветная разметка, есть антискользящий слой,
+                  покрыт лаком в несколько слоев, гладкий, яркий, классный,
+                  Металлический крепеж в ногах, нет острых углов, ножки
+                  поворотные, есть гарантия и сертификат качества.
+                </p>
+              </div>
+              <div class="reviews__box reviews__box-anna">
+                <img
+                  class="reviews__box-img"
+                  src="./assets/img/main/review_Anna.png"
+                  alt="Anna"
+                />
+                <div class="reviews__box-title">
+                  <span class="reviews__box-name">Анна Анатольевна </span>
+                  <span class="reviews__box-town">г. Москва</span>
+                </div>
+                <p class="reviews__box-text">
+                  Для развития речи и координации у моей дочери логопед в
+                  детском центре посоветовал заниматься на специальной
+                  балансировочной доске по методике Бельгоу – сделать ее
+                  самостоятельно или купить уже готовую.
+                </p>
+              </div>
+              <img
+                class="review__box-video"
+                src="./assets/img/main/video-reviews.png"
+                alt="video_reviews"
+              />
+            </div>
+          </div>
         </main>
       </div>
-    </div>
+          </div>
+      </main>
 
-    <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="feedback">
+          <div class="feedback__join">
+            <h3 class="feedback__title">Новинки и акции у вас в почте</h3>
+            <div class="feedback__form">
+              <input
+                type="text"
+                class="feedback__form-input"
+                placeholder="Ваш e-mail адрес"
+              />
+              <button type="button" class="feedback__form-btn">
+                Подписаться
+              </button>
+            </div>
+          </div>
+          <div class="feedback-contact">
+            <div class="contact-phone">
+              <address class="phone">
+                <img
+                  src="./assets/img/img_footer/phone-img.svg"
+                  alt="Телефон"
+                  class="phone__img"
+                />
+                <p class="phone__number">8 (800) 55 48 97</p>
+              </address>
+              <p class="contact-phone__text">Звонок бесплатный</p>
+            </div>
+            <div class="feedback__btns">
+              <button type="button" class="feedback__btn">Задать вопрос</button>
+              <button type="button" class="feedback__btn">
+                Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__columns">
+          <img
+            src="./assets/img/img_footer/logo_footer.svg"
+            alt="Логотип"
+            class="footer__logo footer__logo-type-big"
+          />
+          <img
+            src="./assets/img/img_footer/logo-footer-small.svg"
+            alt="Логотип"
+            class="footer__logo footer__logo-type-small"
+          />
+          <div class="footer__info">
+            <div class="footer__nav">
+              <nav class="footer__column">
+                <h3 class="footer__column-heading">Информация</h3>
+                <ul class="footer__column-links">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Главная</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Кредит</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Возврат</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Покупателям</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Доставка и оплата</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__column">
+                <h3 class="footer__column-heading">Вебинар</h3>
+                <ul class="footer__column-links">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Психолог</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"> Логопед</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"> Дефектолог</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__column">
+                <h3 class="footer__column-heading">Новости</h3>
+                <ul class="footer__column-links">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Акции</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"> Блог</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__contact">
+              <h3 class="footer__column-heading">Контакты</h3>
+              <address class="contact">
+                <p class="contact__text">Время работы: 07:00 - 19:00 по МСК</p>
+                <p class="contact__text contact__text-color-pink">
+                  info@neyro-t.ru
+                </p>
+                <p class="contact__text">
+                  Свердловская обл., г.Новоуральск, <br />
+                  ул. Фрунзе оф.3
+                </p>
+              </address>
+              <ul class="social-icons">
+                <li class="social-icon">
+                  <a
+                    href="https://vk.com/"
+                    target="_blank"
+                    class="social-icon__link"
+                    ><img
+                      class="social-icon__img"
+                      src="./assets/img/img_footer/vk-icon.svg"
+                      alt="Вконтакте"
+                  /></a>
+                </li>
+                <li class="social-icon">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="social-icon__link"
+                    ><img
+                      class="social-icon__img"
+                      src="./assets/img/img_footer/instagram-icon.svg"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li class="social-icon">
+                  <a
+                    href="https://www.whatsapp.com/"
+                    target="_blank"
+                    class="social-icon__link"
+                    ><img
+                      class="social-icon__img"
+                      src="./assets/img/img_footer/whatsapp-icon.svg"
+                      alt="Whatsapp"
+                  /></a>
+      
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            Политика обработки персональных данных
+          </p>
+          <ul class="pay-card">
+            <li class="pay-card__item">
+              <img
+                src="./assets/img/img_footer/mir-card.svg"
+                alt="Мир"
+                class="pay-card__img"
+              />
+            </li>
+            <li class="pay-card__item">
+              <img
+                src="./assets/img/img_footer/master-card.svg"
+                alt="Master-Card"
+                class="pay-card__img"
+              />
+            </li>
+            <li class="pay-card__item">
+              <img
+                src="./assets/img/img_footer/visa-card.svg"
+                alt="Visa"
+                class="pay-card__img"
+              />
+            </li>
+          </ul>
+          <p class="footer__author">Copyright © 2021 ООО “Интернет проекты”</p>
+        </div>
+      </footer>
   </body>
 </html>
